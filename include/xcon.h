@@ -1,7 +1,6 @@
 #pragma once
 namespace xcon
 {
-public:
 	template <typename v>
 	struct vec2_t
 	{
