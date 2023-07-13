@@ -1,5 +1,5 @@
 #pragma once
-class xcon
+namespace xcon
 {
 public:
 	template <typename v>
