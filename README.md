@@ -3,48 +3,17 @@ This project leverages commonly used vector structs to handle various types of v
 These vector structs, including `vec2`, `vec3`, and `vec4`, offer a flexible and efficient way to represent 2-dimensional, 3-dimensional, and 4-dimensional vectors respectively. 
 They provide essential functionalities for storing, manipulating, and performing calculations on vector data, making them indispensable tools for tasks involving coordinates, positions, or other vector-related operations.
 
-## Installation
-
-### Windows:
-- Create a new directory called "build" in the projects root folder:
+## Building
 ```bash
+git clone https://github.com/dwfwl/xcon.git
+cd path/to/project
 mkdir build
-```
-- Navigate to the newly created "build" directory:
-```bash
 cd build
-```
-- Run CMake from the "build" directory:
-```bash
 cmake ..
-```
-- Open the generated Visual Studio solution project `xcon.sln` and build the solution.
-- Find the output in: `xcon/build/Debug/..` or `xcon/build/Release/..`.
-
-
-### Linux / macOS
-- Change to the project's root directory (the directory including the CMakeLists.txt).
-```bash
-cd path/to/the/project
-```
-- Create a new directory called "build" in the projects root folder:
-```bash
-mkdir build
-```
-- Navigate to the newly created "build" directory:
-```bash
-cd build
-```
-- Run CMake from the "build" directory:
-```bash
-cmake ..
-```
-- After CMake generates the build files, use the following command to build the project:
-```bash
 make
 ```
-- Once the build is completed, you will find the output in the build folder itself.
 ## Examples
+
 ```cpp
 #include <xcon/xcon.h>
 #include "player.h"
