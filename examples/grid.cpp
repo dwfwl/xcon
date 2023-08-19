@@ -1,4 +1,4 @@
-#include "../include/xcon.h"
+#include "xcon.h"
 
 #include <iostream>
 #include <vector>
