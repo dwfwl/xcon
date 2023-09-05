@@ -1,4 +1,6 @@
 #include <string>
+#include <istream>
+#include <ostream>
 #include "vec.h"
 
 namespace xcon
@@ -8,6 +10,8 @@ namespace xcon
 	{
 	public:
 		T x, y, z, w;
+
+		vec() {};
 
 		vec(T x, T y, T z, T w) : x(x), y(y), z(z), w(w) {};
 
@@ -69,6 +73,18 @@ namespace xcon
 					}
 				}
 			}
+		}
+
+		friend std::ostream& operator<<(std::ostream& stream, const vec<4, T>& vector)
+		{
+			stream << vector.x << ", " << vector.y << ", " << vector.z << ", " << vector.w;
+			return stream;
+		}
+
+		friend std::istream& operator>>(std::istream& stream, vec<4, T>& vector)
+		{
+			stream >> vector.x >> vector.y >> vector.z >> vector.w;
+			return stream;
 		}
 	};
 
