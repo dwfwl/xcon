@@ -40,10 +40,7 @@ int main(void)
 	xcon::vec4 BitonicSort = xcon::vec4(3, 1, 4, 2);
 	BitonicSort.sort();
 
-	std::cout << BitonicSort.x << ", " << // 1
-				 BitonicSort.y << ", " << // 2
-				 BitonicSort.z << ", " << // 3
-				 BitonicSort.w << ", " << std::endl; // 4\n
+	std::cout << BitonicSort << std::endl;
 }
 ```
 
